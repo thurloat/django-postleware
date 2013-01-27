@@ -11,7 +11,7 @@ f.close()
 
 setup(
     name='django-postleware',
-    version='1.0',
+    version='1.0.1',
     author='Adam Thurlow',
     author_email='thurloat@gmail.com',
     url='http://github.com/thurloat/django-postleware',
