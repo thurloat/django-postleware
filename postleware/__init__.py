@@ -7,7 +7,8 @@ except Exception, e:
 #
 class PostResponseCachebusterMiddleware(object):
     def process_response(self, request, response):
-        if not response.has_header('Cache-Control'):
+        if (request.method == 'POST' and
+            not response.has_header('Cache-Control')):
             response['Cache-Control'] = 'no-cache'
 
         return response
