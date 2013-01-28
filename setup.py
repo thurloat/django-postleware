@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from setuptools import setup, find_packages
+from setuptools import setup
 
 install_requires = [
     'django>=1.2',
@@ -11,14 +11,14 @@ f.close()
 
 setup(
     name='django-postleware',
-    version='1.0.1',
+    version='1.0.2',
     author='Adam Thurlow',
     author_email='thurloat@gmail.com',
     url='http://github.com/thurloat/django-postleware',
     description='A simple django middleware that ensures POSTs aren\'t cached by clients.',
     long_description=readme,
     license='BSD',
-    packages=find_packages(),
+    packages=['postleware'],
     install_requires=install_requires,
     include_package_data=True,
     zip_safe=False,
